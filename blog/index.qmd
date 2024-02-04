@@ -1,8 +1,7 @@
 ---
 title: "Meeting People Where They R"
 description: |
-  This is my blog where I practice sharing my curiosity about R.<br>
-  It includes notes and tutorials for my future self and hopefully also for you.<br>
+  这是我的博客，我在这里分享我对体育经济学的好奇心.<br>
   [Subscribe via RSS](/blog/index.xml)
 listing: 
   contents: 

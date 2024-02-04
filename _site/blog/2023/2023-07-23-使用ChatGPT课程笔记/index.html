@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jason ZHOU">
+<meta name="dcterms.date" content="2022-10-31">
+<meta name="description" content="建立一个基于 ChatGPT 的研究习惯">
+
+<title>Jason ZHOU - 使用ChatGPT做研究</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" data-domain="bioconductor.github.io/biocblog" src="https://plausible.io/js/script.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Jason ZHOU - 使用ChatGPT做研究">
+<meta property="og:description" content="建立一个基于 ChatGPT 的研究习惯">
+<meta property="og:image" content="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/SsZ71v.png">
+<meta property="og:site-name" content="Jason ZHOU">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Jason ZHOU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about/index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talk/index.html" rel="" target="">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../publication/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../project/index.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns">
+<div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
+<h1 class="title">使用ChatGPT做研究</h1>
+    <div class="quarto-categories">
+        <div class="quarto-category">随笔</div>
+        <div class="quarto-category">GPT</div>
+        <div class="quarto-category">2023</div>
+      </div>
+  </div>
+
+<div>
+  <div id="title-block-title-desc" class="description pt-4">
+    <p>建立一个基于 ChatGPT 的研究习惯</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jason ZHOU </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 31, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
+<!-- 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title"> 
+-->
+<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
+<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
+
+
+<p>Last step： 1. Output：该用 GPT 把研究问题和实证思路完成，my paper 2. Input：听 GPT 课程，写笔记 3. Input：将《经济研究》几篇大佬的文章读一下，看是否有模拟空间 4. Output：圣文问卷的改写</p>
+<p>主要考察选题的研究意义与决策咨询价值，及对与本课题相关的研究动态及实际工作进展实施情况的把握程度。 主要考察研究的基本思路、主要内容、重点难点及到相关实际工作部门开展调研的计划安排、拟产出的决策咨询研究报告及在重要报刊发表的理论文章、开展本课题研究的主要数据、资料、文献。 主要考察项目负责人前期相关研究成果情况。</p>
+<p>要看的文件：</p>
+<p>课题主要政策文件</p>
+<p>我是体育与区域经济方向的大学教授，现正在申请学术课题，而你扮演同行评审的角色。 我们现在正在讨论学术问题，需要进行头脑风暴，最终目标是将课题方向聚焦到申请书撰写上。 让我们一起讨论这个议题：北京冬奥遗产运用成为推动京津冀协同发展新动能研究。 需要采取一问一答的形式，由你来向我发问</p>
+<p>体育经济与行为决策，赛事设施与城市发展</p>
+<p>1.北京2022年冬奥会、冬残奥会北京大学志愿者工作突出贡献个人，2022 2.校体育场馆管理资源优化配置研究，北京大学2021年度体育科学大会暨第39届体育科学论文报告会，一等奖，专题主报告，2021 3.关于世界一流大学体育课程建设的思考——兼论大学与体育的现代性契合，北京高校第十届青年教师教学基本功比赛，三等奖，2017</p>
+<p>就资料占有情况来说，复旦大学图书馆及经济学院均拥有丰富的数据库及各种统计数据库，能够为本课题提供完备的数据、设备、文献资料支持。 政策报告《产业政策、医疗保障体制与公共健康之间的联动机制及其政策含义》 已提交给多地政府作为决策时的参考。通过调整产业政策降低地区发病率可以实 现公共资源合理有效地使用。对产业政策和公共健康关系的实证考察可以在此基 础上估算出特定政策的环境健康成本及影响。将这些参数纳入决策者考量范围无疑有助于提高公共政策的质量和效率，从而降低不稳定因素增进社会和谐，也响 应了党的“十八大“报告中“建设环境友好型社会“的精神。</p>
+<p>体育设施与城市发展 他的研究还深入探讨了体育设施布局与城市发展之间的关系。例如， 职业体育联盟研究 他对职业体育联盟的研究也相当具有深度，例如在《现代职业体育联盟的研究对象与方法价值观》和《职业体育联盟的竞争均衡测度及指标选择》中，周教授深入探讨了职业体育联盟的竞争力、均衡性以及如何选择合适的指标来评估其表现。 冬奥遗产研究 考虑到冬奥的独特性与影响力，周正卿教授</p>
+<p>识别环境污染与公共健康及社会经济之间的因果关系。并由此测算出相关健康与经济成本。最后，围绕这些发现提出政策建议。就因果识别策略来说，已完成课题采用煤炭储量作为火电厂选址的工具变量，进而讨论火电厂气体排放对健康的影响。在课题主持人陈述及修改审稿人意见的过程中，同行提出了一些商榷 意见，首先，煤炭可能通过其他因素影响气体排放。如果存在该内生性问题，那么由此获得的估计结果可能存在偏误。其次，该课题实证分析的研究单位是地级市， 但气体排放的范围却没有行政区划的限制。因此，本课题捕捉到的环境影响可能是真实作用的下限。虽然课题成果之一《空气质量与公共健康：以火电厂二氧化 硫排放为例》发表在经济学权威杂志《经济研究》上，我们依然认为该问题具有继续深入下去的必要。</p>
+<p>本课题试图在以下三个方面展开更加严谨的进一步探讨：第一，利用更加外生的风向作为准自然实验来解决每个地区受到污染水平的内生性问题；我们认为这在当前地方政府汇报的环境污染水平存在测量偏误的环境下优点尤其突出；第二，不 同于已完成课题主要关注环境污染对当地辖区公众健康的影响，本课题重点考察环境污染的外溢性影响。具体来说，我们考察样本地区周边50公里范围内电厂所产生污染对样本地区公共健康的影响。我们认为，这两个课题的结论相互补充，可以全面地呈现出环境污染的潜在影响。第三，已完成课题重点关注呼吸系统相关疾病，本项目则将考察范围进一步扩展到心脑血管相关疾病。</p>
+<p>在课题申请过程中，与实际工作部门的合作是至关重要的。它不仅为学术研究提供了实际的应用背景，还有助于确保研究成果能够为实际决策提供指导。以下是课题申请中与实际工作部门合作的基础与优势： <strong>1.基于实际的问题解决：</strong> 与实际工作部门的合作使得研究更加贴近实际，能够围绕真实存在的问题展开，提高研究的实用性和适用性。 <strong>2.获取第一手数据：</strong> 实际工作部门可以为研究者提供大量的第一手数据，这对于数据驱动的研究至关重要，同时也确保了数据的真实性和准确性。 <strong>3.资源整合：</strong> 实际工作部门往往拥有丰富的资源，如资金、设施、人力等，这些都可以为研究提供支持，使得研究更加完善。 <strong>4.提供实际应用的场景：</strong> 与实际工作部门的合作为研究者提供了实地考察的机会，使他们能够更好地理解实际问题，从而进行更加深入的研究。 <strong>5.提高研究的影响力：</strong> 实际工作部门的参与不仅可以提高研究的质量，还可以扩大研究的影响范围，使得研究成果得到更广泛的认可和应用。 <strong>6.双向交流与反馈：</strong> 研究者与实际工作部门之间的交流是双向的，既可以为研究者提供指导，也可以为实际工作部门提供决策支持。 <strong>7.保持研究的前沿性：</strong> 实际工作部门往往与时俱进，能够为研究者提供最新的信息和趋势，确保研究始终保持前沿性。 综上所述，与实际工作部门的合作为课题申请带来了诸多优势，有助于研究的深入开展，同时也增强了研究的实用性和影响力。</p>
+<p><strong>研究基础与优势</strong></p>
+<p><strong>研究基础与优势</strong></p>
+<p>课题申请人周正卿教授，近年来的学术研究集中在体育赛事设施与城市发展的相互影响上，为本项目奠定了坚实的研究基础。在《国际大都市“国际重大赛事活动”比较研究及对北京的启示与建议》中，周教授系统探讨了全球重要都市筹办赛事的经验，为北京提供策略性指导。其对城市居民社区体育用地的资产化研究和现代体育设施与城市发展的理论探究，均反映了其在此领域的深度研究。此外，周教授还专注于冬奥会筹办与遗产利用的高效策略，为本次研究提供了前瞻性的视角。</p>
+<p>与此同时，周教授与实际工作部门的紧密合作为本研究带来了实践基础与优势。其参与的《多视角下北京冬奥遗产开发利用综合研究》已为北京市政府提供决策参考，印证了他的研究对于政策调整与公共资源使用的实际价值。加之在北京大学中国都市经济研究基地和国家体育产业研究基地的研究经验，确保了周教授在实际应用和策略研究上的权威性。</p>
+<p>综上，周正卿教授的前期研究成果及与实际部门的合作经验，为本课题提供了充分的研究基础与显著的实践优势。</p>
+<p>在实践合作方面，负责人与实际工作部门的紧密合作为本研究带来了实践基础与优势。例如，《多视角下北京冬奥遗产开发利用综合研究》已为北京市政府提供决策参考，显示了研究在政策实际应用上的重要性。另外，其在北京大学中国都市经济研究基地和国家体育产业研究基地的研究背景为研究提供了更广泛的学术视角与资源。</p>
+<p>总之，负责人的前期研究成果和与相关部门的合作经验，确保了本课题研究的深度和广度，也带来了实践上的优势。</p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-zhou2022" class="csl-entry quarto-appendix-citeas" role="listitem">
+ZHOU, Jason. 2022. <span>“使用ChatGPT做研究.”</span> October 31, 2022.
+<a href="https://pkuzzq.netlify.app/blog/2023/2023-07-23-使用ChatGPT课程笔记">https://pkuzzq.netlify.app/blog/2023/2023-07-23-使用ChatGPT课程笔记</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="spcanelon/silvia" issue-term="title" theme="boxy-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

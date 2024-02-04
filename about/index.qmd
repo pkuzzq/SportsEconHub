@@ -1,7 +1,8 @@
 ---
-title: "Silvia Canelón"
-subtitle: Data Analyst,<br>Urban Health Lab @Penn
-image: sidebar/avatar.png
+title: "Jason ZHOU"
+pagetitle: "SportsEconHub"
+subtitle: Sports Economist,<br>Physical Educaiton Of Department @Pku
+image: sidebar/profile2.jpg
 image-alt: "Smiling woman with a tan complexion, dark eyes, and dark long wavy hair styled to one side"
 about:
   template: trestles

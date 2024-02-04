@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Christopher M. Weible">
+<meta name="dcterms.date" content="2023-07-07">
+<meta name="description" content="如何快速抓取信息是学术专业人士的重要技巧.Christopher M. Weible博士给了我们很多建议">
+
+<title>Jason ZHOU - 阅读密码I</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" data-domain="bioconductor.github.io/biocblog" src="https://plausible.io/js/script.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Jason ZHOU - 阅读密码I">
+<meta property="og:description" content="如何快速抓取信息是学术专业人士的重要技巧.Christopher M. Weible博士给了我们很多建议">
+<meta property="og:image" content="https://pkuzzq.netlify.app/blog/2023/2023-07-07-阅读密码I/guide.png">
+<meta property="og:site-name" content="Jason ZHOU">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1024">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Jason ZHOU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about/index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talk/index.html" rel="" target="">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../publication/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../project/index.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns">
+<div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
+<h1 class="title">阅读密码I</h1>
+    <div class="quarto-categories">
+        <div class="quarto-category">文献</div>
+        <div class="quarto-category">写作技巧</div>
+        <div class="quarto-category">2023</div>
+      </div>
+  </div>
+
+<div>
+  <div id="title-block-title-desc" class="description pt-4">
+    <p>如何快速抓取信息是学术专业人士的重要技巧.Christopher M. Weible博士给了我们很多建议</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://medium.com/policy-process-matters/be-like-mark-a-guide-to-analyzing-journal-articles-235c79ccd117">Dr.&nbsp;Christopher M. Weible</a> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 7, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#第一部分-分析的标准与需要回答的问题" id="toc-第一部分-分析的标准与需要回答的问题" class="nav-link active" data-scroll-target="#第一部分-分析的标准与需要回答的问题">第一部分 分析的标准与需要回答的问题</a></li>
+  <li><a href="#第二部分-与标准相配套的阅读策略" id="toc-第二部分-与标准相配套的阅读策略" class="nav-link" data-scroll-target="#第二部分-与标准相配套的阅读策略">第二部分 与标准相配套的阅读策略</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
+<!-- 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title"> 
+-->
+<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
+<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
+
+
+<p>第 1 部分是文章的标准. 第 2 部分是阅读策略. 使用指南时,请考虑与每个问题可能优缺点,不要忽视整篇文章.</p>
+<section id="第一部分-分析的标准与需要回答的问题" class="level2">
+<h2 class="anchored" data-anchor-id="第一部分-分析的标准与需要回答的问题">第一部分 分析的标准与需要回答的问题</h2>
+<p>1.研究问题/目标(Question/Objective)- <strong>(i)</strong>文章试图回答问题或实现目标是什么?可能不止一个 <strong>(ii)</strong>对于社会和学术界而言,为什么论证或解释该问题/达成目标是重要的</p>
+<p>2.主要论点/发现(Argument/Findings)- <strong>(i)</strong>主要的论点/发现是什么? <strong>(ii)</strong>多大程度上,这些论点/发现清晰明确地陈述出来? <strong>(iii)</strong>多大程度上,这些主要论点上充分回答了研究问题或实现目标?</p>
+<p>3.对文献的贡献(Contributions to the Literature)- <strong>(i)</strong>文章试图帮助理解学术文献中的哪个难题<strong>(puzzle)</strong>以及试图填补该难题中的哪个空白? <strong>(ii)</strong>本文如何有助于理解这一难题并填补学术文献中的空白? <strong>(iii)</strong>多大程度上,对学术文献的贡献是合理且是重要进步?</p>
+<p>4.理论- <strong>(i)</strong>使用了哪些理论方法来指导和解释实证分析?可能会有多个 <strong>(ii)</strong>强调了哪些概念.如果它们相互关联(以假设的形式),提出了什么的相互关系(是否可称之为”因果关系”)?指出自变量和因变量,对于识别可能有帮助 <strong>(iii)</strong>多大程度上,充分论证相互关系背后的原理(例如机制)?换句话说,这些相互关系是否得到了合理推理的支持? <strong>(iv)</strong>总体而言,该理论应用的优点和缺点是什么?</p>
+<p>5.操作化(Operationalization)- <strong>(i)</strong>理论中的概念多大程度上以透明且令人信服的方式被测量? <strong>(ii)</strong>多大程度上,代理变量能够代表概念或理论定义?</p>
+<p>6.研究设计/数据来源- <strong>(i)</strong>研究设计/数据来源是什么(例如文档、调查、访谈)? <strong>(ii)</strong>多大程度上,所有收集和分析数据的步骤都以清晰、透明的方式描述了? <strong>(iii)</strong>研究设计和数据收集方法在多大程度上足够明确且可以复制? <strong>(iv)</strong>数据限制问题得到充分解决? <strong>(v)</strong>研究设计/数据来源对于回答研究问题/目标、为文献做出贡献以及应用理论有多合适?</p>
+<p>7.表格和图表- <strong>(i)</strong>表格和图表是否清晰且信息量充足? <strong>(ii)</strong>是否有详细的标题,即使在不查找文本的情况下也理解表格和图形? <strong>(iii)</strong>变量名称是否合理? <strong>(iv)</strong>在表格和图形中,重要的影响是否明确标记? <strong>(v)</strong>多大程度上,这些表格和图形有效地阐述了主要论点?</p>
+<p>8.分析技术(Analytical Techniques) <strong>(i)</strong>鉴于,分析技术(统计或其他)是否与数据、研究问题和研究设计合适? <strong>(ii)</strong>数据能否清晰地支持主要论点? <strong>(iii)</strong>是否充分讨论了与预期不一致的发现替代性解释?</p>
+<p>9.普适性- <strong>(i)</strong>作者多大程度上试图将基本论点推广到所研究的或其他的背景中?<strong>(ii)</strong>外部有效性?</p>
+<p>10.意含<strong>(Implications)</strong>- <strong>(i)</strong>从理论和实践层面看,文章对政策有哪些含义? <strong>(ii)</strong>这些意含是如何从论证、研究设计和数据中得出的? <strong>(iii)</strong>这些政策意含是否足够证明对社会重要性的合理性? <strong>(iv)</strong>如果有下一步研究,多大程度上能建立在本文之上?</p>
+<p>11.文字清晰度- <strong>(i)</strong>文章写得好吗? <strong>(ii)</strong>写作是否清晰明了? <strong>(iii)</strong>文章能否更简洁地表达意思?</p>
+</section>
+<section id="第二部分-与标准相配套的阅读策略" class="level2">
+<h2 class="anchored" data-anchor-id="第二部分-与标准相配套的阅读策略">第二部分 与标准相配套的阅读策略</h2>
+<p><strong>粗读</strong></p>
+<p><strong>步骤1.</strong>阅读标题和摘要.然后快速浏览整篇论文,大约需要10秒钟来了解问题/目标、理论、研究方法/数据来源和主要论点的感觉.在投入更多时间和精力之前,请决定这篇文章是否有助于您当前的研究目标.</p>
+<p><strong>步骤2.</strong>阅读引言.引言通常以宽泛的引言句/段落开始,然后逐渐缩小到文章特定焦点或主题.寻找对文献的贡献、主要论点、理论方法和研究问题/目标.有时基本论点在引言中没有提及,或者只是预示.</p>
+<p><strong>步骤3.</strong>阅读结论并扫描表格和图表.寻找有关主要论点和理论方法的更多详细信息.主要论点通常在结论的第一段,引言的最后一段或摘要.了解理论方法的基本概念,如果作者以陈述性假设方式展现,则能更快抓取.通常会在结尾处发现有关普适性和政策影响的陈述.</p>
+<p>步骤1到3应该需要大约10分钟或更少的时间.此时,您应该对文章有一个良好的理解,并能够回答一些与研究问题/目标、对科学的贡献、政策影响、普适性、基本理论方法和基本论点相关的问题.</p>
+<p><strong>精读</strong> <strong>步骤4.</strong>通读文章.引言的最后一句通常描述了论文的总体布局.当您阅读论文时,会遇到理论和方法部分.识别更多关于理论方法和研究设计/数据来源的细节.搜寻预期(expectations)、命题(propositions)或假设(hypotheses)等内容.通常会有关于案例研究或主题的专门段落或小节.这篇文章是否验证了案例和主题的重要性?</p>
+<p>核实表格和图形.确定自变量和因变量(如果有的话).使用了哪些分析技术(例如,统计学)?表/图中的变量是否清晰且一致地标记?易于将变量标签与假设、操作化和概念联系起来吗?作者是否描述了每个表格和图形的布局?作者是否充分描述了所使用的方法,解释为什么使用特定方法,并提供明确而深思熟虑的结果解释?结果有多强大可靠?</p>
+<p>文章结尾通常会有讨论和结论.作者是否讨论了文章的局限性和研究结果的普适性(通常在结论附近找到)?再次核查主要观点、研究问题/目标、理论方法、政策影响以及对学科的贡献,评估以上的内容是否组成了一个连贯整体.您可能需要回头重新阅读文章中的个别小姐,以核查各部分间的一致性.描述或实证方法、数据来源和研究设计是否支持主要观点、是否回答了研究问题或实现目标,是否足以支撑像作者声称那样其对文献贡献作出的贡献?从结果中你能学到什么?重要见解是什么?由本文产生了哪些新的研究问题或确定了未来研究方向?</p>
+<p>完成步骤1到4可能需要超过一个小时.您可能希望重新阅读整篇文章或部分内容,并来回跳转以进行评论和分析.</p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-christopher m. weible2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Christopher M. Weible, Dr. 2023. <span>“阅读密码i.”</span> July 7, 2023.
+<a href="https://pkuzzq.netlify.app/blog/2023/2023-07-07-阅读密码I">https://pkuzzq.netlify.app/blog/2023/2023-07-07-阅读密码I</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="spcanelon/silvia" issue-term="title" theme="boxy-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
