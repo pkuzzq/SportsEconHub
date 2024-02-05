@@ -25,7 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -72,10 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-categories','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 5,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -98,7 +96,6 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
 <link rel="alternate" type="application/rss+xml" title="Jason ZHOU" href="index.xml"><meta property="og:title" content="Jason ZHOU - Meeting People Where They R">
 <meta property="og:description" content="这是我的博客，我在这里分享我对体育经济学的好奇心. Subscribe via RSS">
 <meta property="og:image" content="https://pkuzzq.netlify.app/blog/2023/2023-12-29-hello-quarto/featured.jpg">
@@ -139,8 +136,31 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../reading/index.html" rel="" target="">
+ <span class="menu-text">Reading</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../reading/research.qmd" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../project/index.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/zekiakyol" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/zekiakyol0" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@zekiakyol" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -153,9 +173,11 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-cloud"><div class="category" data-category=""><span class="quarto-category-count category-cloud-1"></span></div><div class="category" data-category="2023"><span class="quarto-category-count category-cloud-8">2023</span></div><div class="category" data-category="2024"><span class="quarto-category-count category-cloud-1">2024</span></div><div class="category" data-category="GPT"><span class="quarto-category-count category-cloud-2">GPT</span></div><div class="category" data-category="GPT生产"><span class="quarto-category-count category-cloud-1">GPT生产</span></div><div class="category" data-category="R"><span class="quarto-category-count category-cloud-1">R</span></div><div class="category" data-category="leaflet"><span class="quarto-category-count category-cloud-1">leaflet</span></div><div class="category" data-category="maps"><span class="quarto-category-count category-cloud-1">maps</span></div><div class="category" data-category="null"><span class="quarto-category-count category-cloud-1">null</span></div><div class="category" data-category="quarto"><span class="quarto-category-count category-cloud-1">quarto</span></div><div class="category" data-category="robotstxt"><span class="quarto-category-count category-cloud-1">robotstxt</span></div><div class="category" data-category="rvest"><span class="quarto-category-count category-cloud-1">rvest</span></div><div class="category" data-category="tidygeocoder"><span class="quarto-category-count category-cloud-1">tidygeocoder</span></div><div class="category" data-category="webscraping"><span class="quarto-category-count category-cloud-1">webscraping</span></div><div class="category" data-category="website"><span class="quarto-category-count category-cloud-1">website</span></div><div class="category" data-category="写作"><span class="quarto-category-count category-cloud-5">写作</span></div><div class="category" data-category="写作技巧"><span class="quarto-category-count category-cloud-1">写作技巧</span></div><div class="category" data-category="提问模板"><span class="quarto-category-count category-cloud-1">提问模板</span></div><div class="category" data-category="教学"><span class="quarto-category-count category-cloud-2">教学</span></div><div class="category" data-category="文献"><span class="quarto-category-count category-cloud-1">文献</span></div><div class="category" data-category="理论"><span class="quarto-category-count category-cloud-1">理论</span></div><div class="category" data-category="经典文献"><span class="quarto-category-count category-cloud-1">经典文献</span></div><div class="category" data-category="经济学基础知识"><span class="quarto-category-count category-cloud-2">经济学基础知识</span></div><div class="category" data-category="经济学概念"><span class="quarto-category-count category-cloud-1">经济学概念</span></div><div class="category" data-category="英语"><span class="quarto-category-count category-cloud-4">英语</span></div><div class="category" data-category="随笔"><span class="quarto-category-count category-cloud-2">随笔</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
 <!-- 
@@ -187,772 +209,521 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div id="posts">
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="经济学概念,理论,2024,GPT生产" data-listing-date-sort="1706976000000" data-listing-file-modified-sort="1707049224394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2024/2024-02-04-失业率与数据要求/index.html"> <img src="../blog/2024/2024-02-04-失业率与数据要求/unemployment.webp" class="thumbnail-image"> </a></p>
 </div>
-<div class="body">
-<a href="../blog/2024/2024-02-04-失业率与数据要求/index.html">
-<h3 class="no-anchor listing-title">
-失业率与数据要求
-</h3>
-<div class="listing-subtitle">
 
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="写作,,2024,GPT生产" data-listing-date-sort="1707062400000" data-listing-file-modified-sort="1707065651033" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2024/2024-02-05-模仿写作/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2024/2024-02-05-模仿写作/econrting.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+模仿写作
+</h5>
+<div class="card-subtitle listing-subtitle">
+EHR study d
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason ZHOU
+</div>
+<div class="listing-date">
+Feb 5, 2024
+</div>
+</div>
+</div>
 </div>
 </a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('经济学概念'); return false;">
-经济学概念
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('理论'); return false;">
-理论
+<div class="g-col-1" data-index="1" data-categories="经济学概念,理论,2024,GPT生产" data-listing-date-sort="1706976000000" data-listing-file-modified-sort="1707065361122" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2024/2024-02-04-失业率与数据要求/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2024/2024-02-04-失业率与数据要求/unemployment.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+失业率与数据要求
+</h5>
+<div class="card-subtitle listing-subtitle">
+EHR study d
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
-2024
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Silvia P. Canelón
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('GPT生产'); return false;">
-GPT生产
-</div>
-</div>
-<a href="../blog/2024/2024-02-04-失业率与数据要求/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2024/2024-02-04-失业率与数据要求/index.html">
 <div class="listing-date">
 Feb 4, 2024
 </div>
-<div class="listing-author">
-Yang YAO
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="R,quarto,website" data-listing-date-sort="1703779200000" data-listing-file-modified-sort="1707060122061" data-listing-date-modified-sort="1703952000000" data-listing-reading-time-sort="19">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-12-29-hello-quarto/index.html"> <img src="../blog/2023/2023-12-29-hello-quarto/featured.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-12-29-hello-quarto/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="2" data-categories="R,quarto,website" data-listing-date-sort="1703779200000" data-listing-file-modified-sort="1707060122061" data-listing-date-modified-sort="1703952000000" data-listing-reading-time-sort="19">
+<a href="../blog/2023/2023-12-29-hello-quarto/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-12-29-hello-quarto/featured.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Hello Quarto: Porting my Website from Hugo Apéro
-</h3>
-<div class="listing-subtitle">
+</h5>
+<div class="card-subtitle listing-subtitle">
 <p>Notes from porting my personal Blogdown website to Quarto</p>
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Silvia Canelón
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('quarto'); return false;">
-quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('website'); return false;">
-website
-</div>
-</div>
-<a href="../blog/2023/2023-12-29-hello-quarto/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-12-29-hello-quarto/index.html">
 <div class="listing-date">
 Dec 29, 2023
 </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="R,maps,webscraping,robotstxt,rvest,leaflet,tidygeocoder" data-listing-date-sort="1701705600000" data-listing-file-modified-sort="1707060077029" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-12-05-ccd-sips/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-12-05-ccd-sips/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Philly Center City District Sips 2023: An Interactive Map
+</h5>
+<div class="card-subtitle listing-subtitle">
+<p>An interactive map showing restaurants participating in CCD Sips 2023</p>
+</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Silvia Canelón
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="R,maps,webscraping,robotstxt,rvest,leaflet,tidygeocoder" data-listing-date-sort="1701705600000" data-listing-file-modified-sort="1707060077029" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-12-05-ccd-sips/index.html"> <img src="../blog/2023/2023-12-05-ccd-sips/featured.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-12-05-ccd-sips/index.html">
-<h3 class="no-anchor listing-title">
-Philly Center City District Sips 2023: An Interactive Map
-</h3>
-<div class="listing-subtitle">
-<p>An interactive map showing restaurants participating in CCD Sips 2023</p>
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('maps'); return false;">
-maps
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('webscraping'); return false;">
-webscraping
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('robotstxt'); return false;">
-robotstxt
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('rvest'); return false;">
-rvest
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('leaflet'); return false;">
-leaflet
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tidygeocoder'); return false;">
-tidygeocoder
-</div>
-</div>
-<a href="../blog/2023/2023-12-05-ccd-sips/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-12-05-ccd-sips/index.html">
 <div class="listing-date">
 Dec 5, 2023
 </div>
-<div class="listing-author">
-Silvia Canelón
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="随笔" data-listing-date-sort="1699163609000" data-listing-file-modified-sort="1699163609402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-11-05-优胜项目制胜规律/index.html"> <img src="../blog/2023/2023-11-05-优胜项目制胜规律/win.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-11-05-优胜项目制胜规律/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="4" data-categories="随笔" data-listing-date-sort="1699163609000" data-listing-file-modified-sort="1699163609402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-11-05-优胜项目制胜规律/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-11-05-优胜项目制胜规律/win.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 优势项目制胜
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('随笔'); return false;">
-随笔
-</div>
-</div>
-<a href="../blog/2023/2023-11-05-优胜项目制胜规律/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-11-05-优胜项目制胜规律/index.html">
-<div class="listing-date">
-Nov 5, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 谢亚龙
 </div>
+<div class="listing-date">
+Nov 5, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="教学,经济学基础知识,2023" data-listing-date-sort="1699163424000" data-listing-file-modified-sort="1699163424655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-05-SEA-Lec01/index.html"> <img src="../blog/2023/2023-08-05-SEA-Lec01/elasticity.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-05-SEA-Lec01/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="5" data-categories="教学,经济学基础知识,2023" data-listing-date-sort="1699163424000" data-listing-file-modified-sort="1699163424655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-08-05-SEA-Lec01/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-05-SEA-Lec01/elasticity.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 SEA HW01
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('教学'); return false;">
-教学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('经济学基础知识'); return false;">
-经济学基础知识
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-05-SEA-Lec01/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-05-SEA-Lec01/index.html">
-<div class="listing-date">
-Nov 5, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Nov 5, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="随笔,提问模板,经典文献,2023" data-listing-date-sort="1699113600000" data-listing-file-modified-sort="1699164191134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-11-05-使用 GPT 研究的日志/index.html"> <img data-src="../blog/2023/2023-11-05-使用 GPT 研究的日志/notebooks/2023-07-23-使用ChatGPT课程笔记/使用ChatGPT课程笔记.webp" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-11-05-使用 GPT 研究的日志/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="6" data-categories="随笔,提问模板,经典文献,2023" data-listing-date-sort="1699113600000" data-listing-file-modified-sort="1699164191134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-11-05-使用 GPT 研究的日志/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-11-05-使用 GPT 研究的日志/notebooks/2023-07-23-使用ChatGPT课程笔记/使用ChatGPT课程笔记.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 使用ChatGPT课程笔记
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('随笔'); return false;">
-随笔
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('提问模板'); return false;">
-提问模板
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('经典文献'); return false;">
-经典文献
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-11-05-使用 GPT 研究的日志/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-11-05-使用 GPT 研究的日志/index.html">
-<div class="listing-date">
-Nov 5, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="英语,写作,2023" data-listing-date-sort="1694176687000" data-listing-file-modified-sort="1694176687853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-09-05-Writing05/index.html"> <img data-src="../blog/2023/2023-09-05-Writing05" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-09-05-Writing05/index.html">
-<h3 class="no-anchor listing-title">
-Writing05-Trilogy of High-Quality Economic Paper Writing
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-09-05-Writing05/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-09-05-Writing05/index.html">
 <div class="listing-date">
-Sep 8, 2023
+Nov 5, 2023
 </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="英语,写作,2023" data-listing-date-sort="1694176687000" data-listing-file-modified-sort="1694176687853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-09-05-Writing05/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-09-05-Writing05" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Writing05-Trilogy of High-Quality Economic Paper Writing
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Yang YAO
 </div>
+<div class="listing-date">
+Sep 8, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="英语,教学," data-listing-date-sort="1693890473000" data-listing-file-modified-sort="1693890473041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-25-Case01/index.html"> <img data-src="../blog/2023/2023-08-25-Case01" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-25-Case01/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="8" data-categories="英语,教学," data-listing-date-sort="1693890473000" data-listing-file-modified-sort="1693890473041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<a href="../blog/2023/2023-08-25-Case01/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-25-Case01" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Case03-American Needle, Inc.&nbsp;v. National Football League
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('教学'); return false;">
-教学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory(''); return false;">
-
-</div>
-</div>
-<a href="../blog/2023/2023-08-25-Case01/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-25-Case01/index.html">
-<div class="listing-date">
-Sep 5, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Sep 5, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="英语,写作,2023" data-listing-date-sort="1693888941000" data-listing-file-modified-sort="1693888941325" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-09-05-Writing04/index.html"> <img data-src="../blog/2023/2023-09-05-Writing04" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-09-05-Writing04/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="9" data-categories="英语,写作,2023" data-listing-date-sort="1693888941000" data-listing-file-modified-sort="1693888941325" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-09-05-Writing04/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-09-05-Writing04" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Writing04-Environment &amp; Economic
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-09-05-Writing04/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-09-05-Writing04/index.html">
-<div class="listing-date">
-Sep 5, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Sep 5, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="英语,写作,2023" data-listing-date-sort="1692982040000" data-listing-file-modified-sort="1692982040637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-23-Writing03/index.html"> <img data-src="../blog/2023/2023-08-23-Writing03" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-23-Writing03/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="10" data-categories="英语,写作,2023" data-listing-date-sort="1692982040000" data-listing-file-modified-sort="1692982040637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<a href="../blog/2023/2023-08-23-Writing03/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-23-Writing03" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Writing03-4Steps
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason ZHOU
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-23-Writing03/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-23-Writing03/index.html">
 <div class="listing-date">
 Aug 26, 2023
 </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="英语,写作,2023" data-listing-date-sort="1692816153000" data-listing-file-modified-sort="1692816153617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<a href="../blog/2023/2023-08-23-Writing02/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-23-Writing02" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Writing02-10Rules
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="英语,写作,2023" data-listing-date-sort="1692816153000" data-listing-file-modified-sort="1692816153617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-23-Writing02/index.html"> <img data-src="../blog/2023/2023-08-23-Writing02" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-23-Writing02/index.html">
-<h3 class="no-anchor listing-title">
-Writing02-10Rules
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-23-Writing02/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-23-Writing02/index.html">
 <div class="listing-date">
 Aug 24, 2023
 </div>
-<div class="listing-author">
-Jason ZHOU
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="教学,经济学基础知识,2023" data-listing-date-sort="1692730031000" data-listing-file-modified-sort="1692730031007" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-12-SEA-HW02/index.html"> <img data-src="../blog/2023/2023-08-12-SEA-HW02" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-12-SEA-HW02/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="12" data-categories="教学,经济学基础知识,2023" data-listing-date-sort="1692730031000" data-listing-file-modified-sort="1692730031007" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-08-12-SEA-HW02/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-12-SEA-HW02" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 SEA HW02
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('教学'); return false;">
-教学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('经济学基础知识'); return false;">
-经济学基础知识
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-12-SEA-HW02/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-12-SEA-HW02/index.html">
-<div class="listing-date">
-Aug 23, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Aug 23, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="英语,写作,2023" data-listing-date-sort="1692730029000" data-listing-file-modified-sort="1692730029416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-23-Listening02/index.html"> <img data-src="../blog/2023/2023-08-23-Listening02" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-23-Listening02/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="13" data-categories="英语,写作,2023" data-listing-date-sort="1692730029000" data-listing-file-modified-sort="1692730029416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<a href="../blog/2023/2023-08-23-Listening02/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-23-Listening02" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Listening02-Schmoozing and the Gender Gap
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-23-Listening02/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-23-Listening02/index.html">
-<div class="listing-date">
-Aug 23, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Aug 23, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="英语,写作,2023" data-listing-date-sort="1692730025000" data-listing-file-modified-sort="1692730025675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-13-Listening01/index.html"> <img data-src="../blog/2023/2023-08-13-Listening01" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-13-Listening01/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="14" data-categories="英语,写作,2023" data-listing-date-sort="1692730025000" data-listing-file-modified-sort="1692730025675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<a href="../blog/2023/2023-08-13-Listening01/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-13-Listening01" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Listening01-Sleep and urban poor
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-13-Listening01/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-13-Listening01/index.html">
-<div class="listing-date">
-Aug 23, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Aug 23, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="英语,写作,2023" data-listing-date-sort="1692730023000" data-listing-file-modified-sort="1692730023314" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-08-23-Writing01/index.html"> <img data-src="../blog/2023/2023-08-23-Writing01" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-08-23-Writing01/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="15" data-categories="英语,写作,2023" data-listing-date-sort="1692730023000" data-listing-file-modified-sort="1692730023314" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
+<a href="../blog/2023/2023-08-23-Writing01/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-08-23-Writing01" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Writing01-Middle Bits Formula
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason ZHOU
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('英语'); return false;">
-英语
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-08-23-Writing01/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-08-23-Writing01/index.html">
 <div class="listing-date">
 Aug 23, 2023
 </div>
-<div class="listing-author">
-Jason ZHOU
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="写作,GPT,2023" data-listing-date-sort="1688918400000" data-listing-file-modified-sort="1690082829783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-07-10-ChatGPT 帮助写作/index.html"> <img data-src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/How-to-use-GPT-4.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-07-10-ChatGPT 帮助写作/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="16" data-categories="写作,GPT,2023" data-listing-date-sort="1688918400000" data-listing-file-modified-sort="1690082829783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-07-10-ChatGPT 帮助写作/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/How-to-use-GPT-4.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 通过 GPT-4 了解论文结构
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('GPT'); return false;">
-GPT
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-07-10-ChatGPT 帮助写作/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-07-10-ChatGPT 帮助写作/index.html">
-<div class="listing-date">
-Jul 10, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Jul 10, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-categories="写作,GPT,2023" data-listing-date-sort="1688918400000" data-listing-file-modified-sort="1690080263640" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-07-23-ChatGPT提问高手/index.html"> <img data-src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/How-to-use-GPT-4.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-07-23-ChatGPT提问高手/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="17" data-categories="写作,GPT,2023" data-listing-date-sort="1688918400000" data-listing-file-modified-sort="1690080263640" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-07-23-ChatGPT提问高手/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/How-to-use-GPT-4.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 使用ChatGPT提问的注释
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('写作'); return false;">
-写作
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('GPT'); return false;">
-GPT
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-07-23-ChatGPT提问高手/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-07-23-ChatGPT提问高手/index.html">
-<div class="listing-date">
-Jul 10, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
+<div class="listing-date">
+Jul 10, 2023
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-categories="教学,经济学基础知识,2023" data-listing-date-sort="1688745600000" data-listing-file-modified-sort="1699114868975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-07-07-SEA-Lec03/index.html"> <img data-src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/屏幕快照 2023-07-07 的 00.29.02 上午.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-07-07-SEA-Lec03/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="18" data-categories="教学,经济学基础知识,2023" data-listing-date-sort="1688745600000" data-listing-file-modified-sort="1699114868975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-07-07-SEA-Lec03/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/屏幕快照 2023-07-07 的 00.29.02 上午.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 SEA Lec03
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason ZHOU
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('教学'); return false;">
-教学
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('经济学基础知识'); return false;">
-经济学基础知识
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-07-07-SEA-Lec03/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-07-07-SEA-Lec03/index.html">
 <div class="listing-date">
 Jul 8, 2023
 </div>
-<div class="listing-author">
-Jason ZHOU
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="18" data-categories="文献,写作技巧,2023" data-listing-date-sort="1688659200000" data-listing-file-modified-sort="1699164068096" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-07-07-阅读密码I/index.html"> <img data-src="../blog/2023/2023-07-07-阅读密码I/guide.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-07-07-阅读密码I/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="19" data-categories="文献,写作技巧,2023" data-listing-date-sort="1688659200000" data-listing-file-modified-sort="1699164068096" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-07-07-阅读密码I/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/2023/2023-07-07-阅读密码I/guide.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 阅读密码I
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('文献'); return false;">
-文献
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('写作技巧'); return false;">
-写作技巧
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-07-07-阅读密码I/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-07-07-阅读密码I/index.html">
-<div class="listing-date">
-Jul 7, 2023
-</div>
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Dr.&nbsp;Christopher M. Weible
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="19" data-categories="随笔,GPT,2023" data-listing-date-sort="1667145600000" data-listing-file-modified-sort="1691697352563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/2023/2023-07-23-使用ChatGPT课程笔记/index.html"> <img data-src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/SsZ71v.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/2023/2023-07-23-使用ChatGPT课程笔记/index.html">
-<h3 class="no-anchor listing-title">
-使用ChatGPT做研究
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('随笔'); return false;">
-随笔
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('GPT'); return false;">
-GPT
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
-2023
-</div>
-</div>
-<a href="../blog/2023/2023-07-23-使用ChatGPT课程笔记/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="../blog/2023/2023-07-23-使用ChatGPT课程笔记/index.html">
 <div class="listing-date">
-Oct 31, 2022
+Jul 7, 2023
 </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="20" data-categories="随笔,GPT,2023" data-listing-date-sort="1667145600000" data-listing-file-modified-sort="1691697352563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../blog/2023/2023-07-23-使用ChatGPT课程笔记/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/SsZ71v.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+使用ChatGPT做研究
+</h5>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Jason ZHOU
 </div>
-</a>
+<div class="listing-date">
+Oct 31, 2022
 </div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></div></div></section></div></main> <!-- /main -->
+</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-untitled" class="csl-entry quarto-appendix-citeas" role="listitem">
+<span>“Meeting People Where They R.”</span> n.d. <a href="https://pkuzzq.netlify.app/blog">https://pkuzzq.netlify.app/blog</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

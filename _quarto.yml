@@ -1,16 +1,18 @@
 project:
   type: website
-  resources:
-    - "CNAME"
+
 execute:
   freeze: true
 
 website:
   title: "Jason ZHOU"
   site-url: https://pkuzzq.netlify.app
-  description: "A blog for the Bioconductor community!"
+  description: "Personal Website"
   open-graph: true
   navbar:
+    pinned: true
+    background: dark
+    foreground: light
     right:
       - text: About
         aria-label: "About Me"
@@ -19,19 +21,33 @@ website:
         aria-label: "Meeting People Where They R"
         href: blog/index.qmd
       - text: Talks
-        aria-label: "Invited Talks"
+        aria-label: Invited Talks
         href: talk/index.qmd
       - text: Publications
         aria-label: "Publications"
         href: publication/index.qmd
+      - text: "Reading"
+        aria-label: "Reading"
+        href: reading/index.qmd
+      - text: "Research"
+        href: reading/research.qmd
       - text: Projects
         aria-label: "Project Portfolio"
         href: project/index.qmd
+      - icon: github
+        href: https://github.com/zekiakyol
+      - icon: twitter
+        href: https://twitter.com/zekiakyol0
+      - icon: youtube
+        href: https://www.youtube.com/@zekiakyol
       - icon: rss
 format:
   html:
-    theme: yeti
-    css: styles.css
+    theme:
+      - cosmo
+      - custom.scss
+    # css: styles.css
+    linkcolor: pink
     include-in-header:
       text: |
         <script defer data-domain="bioconductor.github.io/biocblog" src="https://plausible.io/js/script.js"></script>

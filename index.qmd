@@ -3,10 +3,10 @@ title: "SportsEconHub"
 pagetitle: "SportsEconHub"
 subtitle: "Data Analyst at the Penn Urban Health Lab"
 image: files/profiles/profile.jpg
-image-alt: "Abstract data visualization depicting tall buildings in Philadelphia as a circle. The text inside the circle reads Philadelphia Skyline"
+image-alt: "抽象的数据可视化展示了费城高楼大厦，呈圆形。圆内的文字为“费城天际线”。"
 
 twitter-card:
-    title: Silvia Canelón, PhD
+    title: Jason ZHOU, PhD
     description: |
       Researcher and R educator applying biomedical and spatial data science in ways that prioritize health equity.
     image: files/profiles/profile.jpg
@@ -113,3 +113,6 @@ redirects_combined <- c(manual_redirects, redirects)
 # write the _redirect file
 writeLines(redirects_combined, here::here("_site", "_redirects"))
 ```
+
+::: {#talks}
+:::

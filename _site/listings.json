@@ -16,6 +16,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/2024/2024-02-05-模仿写作/index.html",
       "/blog/2024/2024-02-04-失业率与数据要求/index.html",
       "/blog/2023/2023-12-29-hello-quarto/index.html",
       "/blog/2023/2023-12-05-ccd-sips/index.html",
@@ -39,6 +40,13 @@
     ]
   },
   {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/2022-11-24-mwas-repurposed-covid19-meds/index.html",
+      "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html"
+    ]
+  },
+  {
     "listing": "/about/index.html",
     "items": [
       "/talk/2023-10-11-epis4equity/index.html",
@@ -47,13 +55,6 @@
       "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html",
       "/project/2021-07-07-presentable-user2021/index.html",
       "/project/2021-05-04-tidy-tuesday-alt-text/index.html"
-    ]
-  },
-  {
-    "listing": "/publication/index.html",
-    "items": [
-      "/publication/2022-11-24-mwas-repurposed-covid19-meds/index.html",
-      "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html"
     ]
   }
 ]
