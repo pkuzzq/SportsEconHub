@@ -112,12 +112,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/zekiakyol" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/pkuzzq" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/zekiakyol0" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/pkuzzq12345" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -398,9 +398,39 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/pkuzzq\.netlify\.app");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Powered by <a href="https://quarto.org">Quarto</a>.</div>   
+    <div class="nav-footer-center">© 2024 Jason ZHOU. <a href="https://github.com/sponsors/mcanouil?o=esb"> Sponsor</a>.</div>
+    <div class="nav-footer-right">License: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY NC SA 4.0</a>.</div>
+  </div>
+</footer>
+<script type="text/javascript">
+const dateElements = document.querySelectorAll("p.date, div.listing-date");
+dateElements.forEach((el) => {
+  el.innerHTML = el.innerHTML.replace(
+    /(\d+)(rd|st|th)/g,
+    "$1<sup style='font-size:0.5em;font-style:italic;'>$2</sup>"
+  );
+});
+</script>
 
 
 

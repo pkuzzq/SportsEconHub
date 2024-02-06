@@ -1,8 +1,7 @@
 /* css styles */
 
 /* Remove underlines for links and remove hover colors */
-a {
-}
+a {}
 
 a:link {
   color: #0000FF;

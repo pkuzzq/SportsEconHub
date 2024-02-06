@@ -9,8 +9,18 @@ website:
   site-url: https://pkuzzq.netlify.app
   description: "Personal Website"
   open-graph: true
+  page-navigation: true
+  page-footer:
+    border: true
+    left: |
+      Powered by [Quarto](https://quarto.org).
+    center: |
+      &copy; 2024 Jason ZHOU. [{{< iconify fa6-regular heart >}} Sponsor](https://github.com/sponsors/mcanouil?o=esb).
+    right: |
+      License: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
   navbar:
     pinned: true
+    search: true
     background: dark
     foreground: light
     right:
@@ -35,19 +45,34 @@ website:
         aria-label: "Project Portfolio"
         href: project/index.qmd
       - icon: github
-        href: https://github.com/zekiakyol
+        href: https://github.com/pkuzzq
       - icon: twitter
-        href: https://twitter.com/zekiakyol0
+        href: https://twitter.com/pkuzzq12345
       - icon: youtube
         href: https://www.youtube.com/@zekiakyol
       - icon: rss
 format:
   html:
     theme:
-      - cosmo
+      - coeos
       - custom.scss
-    # css: styles.css
-    linkcolor: pink
+    date-format: "dddd[, the] Do [of] MMMM, YYYY"
+    email-obfuscation: javascript
+    highlight-style: github-dark
+    link-external-newwindow: true
+    linkcolor: blue
+    include-after-body:
+      - text: |
+          <script type="text/javascript">
+          const dateElements = document.querySelectorAll("p.date, div.listing-date");
+          dateElements.forEach((el) => {
+            el.innerHTML = el.innerHTML.replace(
+              /(\d+)(rd|st|th)/g,
+              "$1<sup style='font-size:0.5em;font-style:italic;'>$2</sup>"
+            );
+          });
+          </script>
+    lightbox: auto
     include-in-header:
       text: |
         <script defer data-domain="bioconductor.github.io/biocblog" src="https://plausible.io/js/script.js"></script>
