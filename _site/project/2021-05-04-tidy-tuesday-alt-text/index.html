@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Silvia Canelón">
+<meta name="author" content="Jason ZHOU">
 
-<title>Jason ZHOU - TidyTuesdayAltText</title>
+<title>TidyTuesdayAltText | Jason ZHOU</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../..//files/favicon-512.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" data-domain="bioconductor.github.io/biocblog" src="https://plausible.io/js/script.js"></script>
 
 
-<meta property="og:title" content="Jason ZHOU - TidyTuesdayAltText">
+<meta property="og:title" content="TidyTuesdayAltText | Jason ZHOU">
 <meta property="og:description" content="An R package with the goal of providing insight into the alternative (alt) text accompanying the data visualizations shared on Twitter as part of the TidyTuesday social project.">
 <meta property="og:image" content="https://pkuzzq.netlify.app/project/2021-05-04-tidy-tuesday-alt-text/featured.png">
 <meta property="og:site-name" content="Jason ZHOU">
@@ -73,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:image:width" content="720">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,10 +90,14 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about/index.html" rel="" target="">
  <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html" rel="" target="">
+ <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog/index.html" rel="" target="">
@@ -111,13 +116,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Reading</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../reading/research.qmd" rel="" target="">
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../project/index.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/pkuzzq" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
@@ -129,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.youtube.com/@zekiakyol" rel="" target=""><i class="bi bi-youtube" role="img">
+    <a class="nav-link" href="https://www.youtube.com/(zekiakyol?)" rel="" target=""><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -185,9 +192,11 @@ ul.task-list li input[type="checkbox"] {
 </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 <!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
 <!-- 
@@ -198,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
 
 
-<section id="about-the-data" class="level2">
+<section id="about-the-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="about-the-data">About the data <a href="https://github.com/spcanelon/TidyTuesdayAltText"><img src="featured-hex.png" align="right" height="200" alt="Hex logo for the package. White with a thick black border. Inside, the TidyTuesday logo on the top half which are the words TidyTuesday in white against a broad brush stroke of black paint. On the bottom half, the words alt = &quot;text&quot; in black against a white background and within angle brackets to simulate html code."></a></h2>
 <p>The original data were collected and made available by Tom Mock (<a href="https://twitter.com/thomas_mock">@thomas_mock</a>) using <a href="https://github.com/ropensci/rtweet">{rtweet}</a>. These data are available in the <a href="https://github.com/rfordatascience/tidytuesday#a-weekly-social-data-project-in-r">TidyTuesday repository</a>.</p>
 <p>These tweets were processed and scraped for alternative text by Silvia Canelón (<a href="https://twitter.com/spcanelon">@spcanelon</a>)</p>
@@ -211,28 +220,28 @@ ul.task-list li input[type="checkbox"] {
 <li>CSS selector: <code>.css-1dbjc4n.r-1p0dtai.r-1mlwlqe.r-1d2f490.r-11wrixw</code></li>
 <li>Element attribute: <code>aria-label</code></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
 <p><a href="https://raw.githubusercontent.com/spcanelon/csvConf2021/master/slides/img/webInspection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 1: Example of web inspection being used to identify the CSS selector utilized for alt-text web scraping"><img src="https://raw.githubusercontent.com/spcanelon/csvConf2021/master/slides/img/webInspection.png" class="img-fluid figure-img" alt="Web inspection tool being used to identify the CSS selector corresponding to the primary image of one of Hao Ye's (@Hao_and_Y) tweets with alt text"></a></p>
-<figcaption class="figure-caption">Figure 1: Example of web inspection being used to identify the CSS selector utilized for alt-text web scraping</figcaption>
+<figcaption class="figure-caption margin-caption">Figure 1: Example of web inspection being used to identify the CSS selector utilized for alt-text web scraping</figcaption>
 </figure>
 </div>
-<p>This data package does not include data that could directly identify the tweet author in order to respect any author’s decision to delete a tweet or make their account private after the data was originally collected.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>To obtain the tweet text, author screen name, and many other tweet attributes, you can “rehydrate” the TweetIds (or “status” ids)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>) using the {rtweet} package.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<div class="page-columns page-full"><p>This data package does not include data that could directly identify the tweet author in order to respect any author’s decision to delete a tweet or make their account private after the data was originally collected.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;<a href="https://developer.twitter.com/en/developer-terms/policy">Developer Policy – Twitter Developers | Twitter Developer</a></p></li></div></div>
+<div class="page-columns page-full"><p>To obtain the tweet text, author screen name, and many other tweet attributes, you can “rehydrate” the TweetIds (or “status” ids)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>) using the {rtweet} package.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;<a href="https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet">Tweet object | Twitter Developer</a></p></li><li id="fn3"><p><sup>3</sup>&nbsp;<a href="https://docs.ropensci.org/rtweet/reference/lookup_tweets.html">Get tweets data for given statuses (status IDs). — lookup_tweets • rOpenSci: rtweet</a></p></li></div></div>
 </section>
-<section id="tidytuesday-databases-on-notion" class="level2">
+<section id="tidytuesday-databases-on-notion" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="tidytuesday-databases-on-notion">TidyTuesday databases on Notion</h2>
 <p>I use the data available in the TidyTuesday repository to populate some searchable TidyTuesday databases at <a href="https://tiny.cc/notion-dataviz">tiny.cc/notion-dataviz</a> with data visualizations tagged by the dataset of the week, hashtags, mentions, etc.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
 <p><a href="tt-db-notion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 2: Screenshot of the 2021 TidyTuesday database on Notion, taken on June 1, 2021"><img src="tt-db-notion.png" class="img-fluid figure-img" alt="The Notion 2021 TidyTuesday database showing a gallery of the most recent data visualizations in the collection, organized in a grid,"></a></p>
-<figcaption class="figure-caption">Figure 2: Screenshot of the 2021 TidyTuesday database on Notion, taken on June 1, 2021</figcaption>
+<figcaption class="figure-caption margin-caption">Figure 2: Screenshot of the 2021 TidyTuesday database on Notion, taken on June 1, 2021</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
 <p><a href="tweet-notion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 3: Screenshot of the tweet sharing the TidyTuesday database on Notion"><img src="tweet-notion.png" class="img-fluid figure-img" alt="Thanks to historical twitter data collected by @thomas_mock, the #TidyTuesday database now has tweets dating back to 2018! 6100+ searchable tweets w/ #dataviz creations from 1400+ participants 🤩 Check it out! http://tiny.cc/notion-dataviz" width="500"></a></p>
-<figcaption class="figure-caption">Figure 3: Screenshot of the tweet sharing the TidyTuesday database on Notion</figcaption>
+<figcaption class="figure-caption margin-caption">Figure 3: Screenshot of the tweet sharing the TidyTuesday database on Notion</figcaption>
 </figure>
 </div>
 
@@ -240,14 +249,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><a href="https://developer.twitter.com/en/developer-terms/policy">Developer Policy – Twitter Developers | Twitter Developer</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><a href="https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet">Tweet object | Twitter Developer</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><a href="https://docs.ropensci.org/rtweet/reference/lookup_tweets.html">Get tweets data for given statuses (status IDs). — lookup_tweets • rOpenSci: rtweet</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -512,7 +514,7 @@ dateElements.forEach((el) => {
   );
 });
 </script>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":true,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":true,"openEffect":"zoom"});</script>
 
 
 

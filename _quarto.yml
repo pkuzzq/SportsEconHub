@@ -1,13 +1,33 @@
 project:
   type: website
 
+preview:
+  port: 5555
+  browser: true
+  watch-inputs: true
+  navigate: true
+
 execute:
   freeze: true
+
+render:
+  - "*.qmd"
+  - "*.md"
+  - "!etc/"
+
+bibliography: files/bib/references.bib
+csl: files/bib/chicago-author-date.csl
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | Jason ZHOU"
+author-meta: "Jason ZHOU"
 
 website:
   title: "Jason ZHOU"
   site-url: https://pkuzzq.netlify.app
   description: "Personal Website"
+  favicon: "/files/favicon-512.png"
+
   open-graph: true
   page-navigation: true
   page-footer:
@@ -23,10 +43,12 @@ website:
     search: true
     background: dark
     foreground: light
-    right:
+    left:
       - text: About
         aria-label: "About Me"
         href: about/index.qmd
+      - text: "CV"
+        href: "cv/index.qmd"
       - text: Blog
         aria-label: "Meeting People Where They R"
         href: blog/index.qmd
@@ -40,10 +62,12 @@ website:
         aria-label: "Reading"
         href: reading/index.qmd
       - text: "Research"
-        href: reading/research.qmd
+        href: research/index.qmd
       - text: Projects
         aria-label: "Project Portfolio"
         href: project/index.qmd
+
+    right:
       - icon: github
         href: https://github.com/pkuzzq
       - icon: twitter
@@ -51,16 +75,22 @@ website:
       - icon: youtube
         href: https://www.youtube.com/@zekiakyol
       - icon: rss
+
 format:
   html:
     theme:
-      - coeos
-      - custom.scss
+      - html/ath.scss
+    grid:
+      body-width: 900px
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
     date-format: "dddd[, the] Do [of] MMMM, YYYY"
     email-obfuscation: javascript
-    highlight-style: github-dark
     link-external-newwindow: true
-    linkcolor: blue
     include-after-body:
       - text: |
           <script type="text/javascript">
