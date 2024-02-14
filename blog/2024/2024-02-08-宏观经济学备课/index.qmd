@@ -1,0 +1,163 @@
+---
+title: "经济学研究范式的传统与变革"
+description: ChatGPT不但对人类生产方式、生活方式与思维方式产生深刻影响，也正在推动经济学研究范式的变革。
+author:
+- name: Jason ZHOU
+  orcid: 0000-0001-7685-5337
+date: 2024-02-06
+categories:
+  - 教学材料
+  - "2024"
+  - GPT生产
+keywords:
+  - 经济学发展
+  - 文献综述
+image: "projec.webp"
+subtitle: >
+  从 ChatGPT 对经济学范式的潜在影响中发现经济学的传统
+links:
+- icon: journal-text
+  name: Quarto Docs
+  url: https://quarto.org/docs/websites/
+filters:
+   - include-code-files
+code-annotations: below
+df-print: paged
+
+---
+
+## 写在前面
+
+需要把中级宏观经济学中的关键概念提炼出来，之后可能可以使用的点 
+
+资本是存量，投资是资本的增量。数学上，资本是投资的求积分，但现实中衡量资本存量非常困难
+
+因为资本会有折旧。
+
+## 为什么了解体育需要了解经济，而且是从微观、宏观和计量
+
+这三个方面能够分别从什么视角给我们启发？
+
+经济学建模大多建立在关于偏好、技术、人口、资源、制度、行为等因素的假设基础之上，通过数学等逻辑工具的演绎推理，聚焦少数关键经济变量，研究经济主体行为与经济运行规律。
+
+微观视角：了解决策和行为的基本前提，通过数据工具演绎推理的传导路径，以及这些前提与少数关键经济变量。前提有哪些？个人偏好、技术特征、资源禀赋、人口特征、行为心理和制度约束。
+
+宏观经济：重点讲视角放到了宏观经济现实，特别需要了解
+
+## 体育产业与宏观经济调整
+
+政府的措施主要旨在维持家庭收入和就业，这有助于防止最终消费的进一步下滑。企业获得了直接（例如通过补贴和优惠贷款preferential loans）和间接的支持，后者包括暂时减免temporary reduction in、免除write-off或暂停向预算缴纳的强制性支付suspension of mandatory payments to the budget。
+
+直接向企业提供的大部分援助被用于维持受疫情影响最严重的行业中的就业。这些行业包括：汽车运输、航空、水上和铁路运输、旅游、展览活动、酒店、娱乐和休闲、公共餐饮服务、个人服务、文化和体育、非食品零售，牙科护理服务，继续教育和大众传媒。
+Motor transportation; air, water and rail transport; tourism; exhibition activities; hotels; entertainment and leisure; public catering; personal services; culture and sports; non-food retail; dental care services; continuing education and mass media.
+
+Zyablitsky, “Estimating fiscal multipliers in Russia’s economy”, HSE Economic Journal, 2020, no 2,
+pp 268–294.
+BIS Papers No 122 
+
+
+“在一个风景如画的小城里，小明的家庭运营着一家受欢迎的网球俱乐部。小明的爸爸负责教练工作，妈妈则管理俱乐部的日常事务。他们的网球俱乐部是小镇上的一个聚集地，每天都有许多热爱网球的朋友们来这里练习和交流。
+然而，一场突如其来的经济风暴让小明一家的网球俱乐部面临前所未有的挑战。随着经济的下滑，人们开始减少外出活动，包括参加网球训练，俱乐部的收入大幅下降，小明的家人开始担忧俱乐部的未来。
+政府意识到了这种情况，决定出台一系列措施来支持像小明一家这样的小企业。首先，政府为他们提供了一笔补贴，就像是在他们经营的航船中投下了一块重要的救生圈，使他们能够继续支付水电和其他基本开支，避免关门大吉。
+接着，政府还提供了一种优惠贷款，为小明家的网球俱乐部注入了一笔宝贵的流动资金。这笔贷款就像是一剂强心针，让他们有了重新装修场地、提升设施的能力，甚至在网络上推广俱乐部，吸引更多的网球爱好者。
+最后，政府还暂时减免了一些强制性的税费和缴款，这就像是给了小明家一张免费通行证，让他们在这段艰难时期能够更轻松地呼吸，减轻了他们的财务负担。
+得益于政府的这些措施，小明家的网球俱乐部渐渐找回了生机。他们开始通过线上课程吸引了不少新会员，而且还举办了一些小型的网球比赛，吸引了小镇上其他居民的注意。随着时间的推移，俱乐部不仅恢复了往日的繁荣，还成为了小城中网球爱好者的圣地。
+就这样，通过政府的帮助和自己的不懈努力，小明一家克服了困难，他们的网球俱乐部再次成为了小镇上的一个亮点，为小镇带来了活力和希望。
+”
+
+## 尝试去了解元问题 → meta problem 
+
+如何去找到问题的元问题。
+
+
+### 联邦储备调整货币的工具
+
+美国联邦储备通过以下三种工具改变银行准备金和货币供应量。
+
+#### 1. 公开市场操作 Open Market Operations
+
+公开市场操作是三种工具中最重要且使用最频繁的。它指的是联邦储备买卖美国国债U.S. Treasury和联邦机构证券 federal agency securities的活动。证券Securities包括债券bonds、票据notes和国库券bills。这三者都是借款凭证IOUs（proof that someone has lent money），可以是实体证书或电子记录。三者的区别在于到期期限maturity period（贷款方同意偿还贷款的年数）。债券的到期期限在10至30年之间；票据在1至10年之间；国库券在1年内到期。通常，长期证券和债券的利率较高，因为较长的到期期限承担更大的风险，偿还的可能性较小。
+
+美国财政部United States Treasury作为联邦政府的财政管理者，发行证券以帮助缓解联邦赤字。然后联邦储备银行 Federal Reserve Banks 交易这些债券以改变经济的准备金（货币供应）。为了增加流通中的货币，联邦储备从公众购买证券。最近，联邦储备还购买了抵押证券mortgage securities，以支持金融市场并影响准备金水平。公众用证券换取现金，这将资金投入流通并增加货币供应量。联邦储备出售证券时则相反，这会将资金从流通中取出，减少货币供应量。图示交易的最终效果是联邦储备“货币化”了美国政府（以及最近的私人）借款，从而增加了货币供应量。
+
+#### 2. 准备金要求政策  Reserve Requirement Policy
+
+银行的准备金要求是银行必须作为现金保留的存款百分比。对于大多数大型银行，交易（支票）账户的准备金要求曾为10%。在疫情期间，联邦储备将准备金要求降至0%，即目前的水平。
+
+当联邦储备降低准备金要求时，它允许银行发放更多贷款。这增加了货币供应量。改变准备金要求是一项重大措施，影响数十亿美元的准备金。因此，联邦储备很少改变准备金要求的百分比。
+
+#### 3. 贴现率和联邦基金利率政策
+
+贴现率是商业银行向联邦储备银行借款时必须支付的利率。商业银行借入的资金越多，它就可以向客户贷出更多的资金。这增加了货币供应量。相反，当联邦储备提高贴现率，商业银行从联邦储备银行借款较少时，货币供应量减少。联邦储备银行向商业银行提供三种类型的贷款：短期、长期和季节性。短期贷款的利率最低，长期贷款的利率通常较高。季节性贷款的利率是选定市场利率的平均值。
+
+1995年，联邦储备开始针对联邦基金利率制定目标。联邦基金利率是银行之间对隔夜贷款收取的利率。联邦储备使用此利率作为联邦储备认为的银行系统中适当的准备金量的指标，以实现国家的最佳增长率。联邦储备通过向银行系统提供更多或更少的资金来试图影响这一利率。如果联邦储备向银行系统提供更多资金，联邦基金利率下降。这增加了货币供应量，可能在短期内刺激经济。相反，如果联邦储备减少向银行系统提供的资金，联邦基金利率很可能上升。这减少了货币供应量，从而在短期内减缓经济增长。
+
+Macroeconomics Formulas
+1. Y = C + I + G + NX – the spending approach to calculating GDP.
+2. S = I in a closed economy (no trade) and S = I + NX in an open economy
+3. Calculating Nominal GDP: Multiple the number of each good produced times the price
+of each good.
+1. Calculating Real GDP: this proceeds just as calculating nominal GDP, but instead of
+current prices you use base prices: In the base year Nominal GDP = Real GDP, with
+inflation Nominal GDP > Real GDP.
+1. GDP deflator: A measure of the cost of living (substitute for the CPI). GDP deflator =
+(Nominal GDP/Real GDP) * 100. Remember that this is an index. In the base year the
+GDP Deflator = 100.
+1. Constructing the CPI: step 1: compute the cost of a market basket in each year (prices
+times quantities), step 2: choose a base year. Step 3: Calculate the CPI for the current
+year by: Cost current year x 100
+. Cost in base year
+1. The inflation rate via the CPI: CPI current year – CPI previous year x 100
+. CPI previous year
+Note that this is just a percentage change. The inflation rate is the percentage change in
+the CPI from one period to the next. You could also calculate the percentage change in
+the GDP (implicit) price deflator from year to year to derive at an alternative measure of
+inflation.
+1. Correcting for inflation: Let’s adjust for inflation so we can, in a more meaningful way,
+compare the dollar values of different points in time. Convert a figure in 1990 to its
+current value: current value = value in 1990 * (CPI in 2000/CPI in 1995). For example,
+Babe Ruth earned $80,000 in 1931. Translating to current dollars means: current value =
+80,000 * (107.6/8.7) = $989,000. So $80,000 back then is equivalent to $989,000 today.
+1. Real interest rate = nominal interest rate – inflation rate.
+2.  Production function: Y = AF(L,K,H,N)
+3.  Productivity: Y/L = AF(1,K/L, H/L, N/L)
+4.  Unemployment Rate = (Number of Unemployed/Labor Force)*100. Key, first get the
+labor force – all the folks who are actively seeking employment!
+1.  Labor force participation rate: (Labor force/adult population)*100.
+2.  Money Multiplier = 1/R where R = reserve ratio. Application: an initial injection of
+$1000 of new money into an economy with a reserve ratio of 10% (.1) will generate
+$1000*(10) = $10,000 in total money.
+1.  Quantity equation of money: MV = PY is a monetarist’s view of what explains changes
+in P (they are correct, in the long run changes in P is driven by changes in M because V is
+stable and Y is determined outside the model). If given three of the four variables, you
+should be able to use this equation to find the unknown variable.
+1.  Spending Multiplier = 1/(1 – MPC) OR 1/MPS. It tells you how much total spending an
+initial injection of spending in the economy will generate. For example, if the MPC = .8
+and the government spends $100 million, then the total increase in spending in the
+economy = $100 * 5 = 500 million MPC + MPS = 1.
+1.  Rule of 70: Used to determine how many years it takes for a value to double, given a
+particular annual % growth rate. 70/x = # years to double where x equals growth rate.
+
+
+The Federal Reserve controls the three tools of monetary policy--open market operations, the discount rate, and reserve requirements.
+
+《粗野的脚踢球》，1989 年，称足球为“英国病”。世界最早的俱乐部，谢菲尔德足球俱乐部，1857 年成立；1895 年英国足协开始推行职业化。Wolfgang《运动通史》。
+
+电竞作为新物种：融合了新技术手段和文化工具。
+
+2003 年 11 月 18 日，国家体育总局在人民大会堂举行中国数字体育平台开通仪式，宣布电子竞技运动为第 99 个正式体育竞赛项目。
+2008 年，将电子竞技改列位第 78 个正式体育竞赛项目。
+2016 年，
+
+未来体育的观看和体验方式“数字化和流畅感”（digital and seamless）IOC Looking  to the future of sport and the games
+
+综合了计算机技术、互联网文化、视听艺术、竞技活动和大众娱乐，形式与内容交叉组合
+
+现代体育和核心：以竞技表演的方式娱乐大众，进而形成产业。
+
+艾瑞咨询报告显示，中国电竞用户规模已经超过 2.6 1亿。
+
+杨越（2018）：电竞的负面影响：1 来自电竞活动本身，网游对青少年的不利影响；2，电竞产业发展中出现不利于青少年问题。高强度运动，电竞作为运动本身不同于以“身体本位”的（anchor of Physicality）传统项目，具有技术障碍，过度游戏肯定不利于青少年身心健康。
+
+打游戏能够打发闲暇、消减压力、调节身心。是心理上的运动。
+

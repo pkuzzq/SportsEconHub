@@ -1,0 +1,33 @@
+---
+title: "左翼右翼与经济政策"
+description: 左派和右派的称呼最初起源于18世纪末的法国大革命。在大革命期间国民议会中，两伙持不同政见的人分别坐在议会的两侧，温和派的保王党人都坐在右边，激进的革命党人都坐在左边
+author:
+- name: Jason ZHOU
+  orcid: 0000-0001-7685-5337
+date: 2024-02-06
+categories:
+  - 教学材料
+  - "2024"
+  - GPT生产
+keywords:
+  - 经济学政策
+  - 政治图谱
+image: "projec.webp"
+subtitle: >
+  从 ChatGPT 对经济学范式的潜在影响中发现经济学的传统
+links:
+- icon: journal-text
+  name: Quarto Docs
+  url: https://quarto.org/docs/websites/
+filters:
+   - include-code-files
+code-annotations: below
+df-print: paged
+
+---
+
+## 写在前面
+
+区分清楚左翼右翼非常有必要，特别对于经济政策而言~
+
+## 历史
