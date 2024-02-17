@@ -1,10 +1,10 @@
 ---
-title: "经济学研究范式的传统与变革"
+title: "宏观经济学备课"
 description: ChatGPT不但对人类生产方式、生活方式与思维方式产生深刻影响，也正在推动经济学研究范式的变革。
 author:
 - name: Jason ZHOU
   orcid: 0000-0001-7685-5337
-date: 2024-02-06
+date: 2024-02-08
 categories:
   - 教学材料
   - "2024"
