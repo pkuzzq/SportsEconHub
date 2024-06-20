@@ -7,24 +7,6 @@
     ]
   },
   {
-    "listing": "/about/index.html",
-    "items": [
-      "/talk/2023-10-11-epis4equity/index.html",
-      "/talk/2023-03-09-penn-community-scholars/index.html",
-      "/publication/2022-11-24-mwas-repurposed-covid19-meds/index.html",
-      "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html",
-      "/project/2021-07-07-presentable-user2021/index.html",
-      "/project/2021-05-04-tidy-tuesday-alt-text/index.html"
-    ]
-  },
-  {
-    "listing": "/publication/index.html",
-    "items": [
-      "/publication/2022-11-24-mwas-repurposed-covid19-meds/index.html",
-      "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html"
-    ]
-  },
-  {
     "listing": "/research/index.html",
     "items": [
       "/research/articles/chaudhry-heiss-ngos-repression/index.html",
@@ -63,12 +45,31 @@
     ]
   },
   {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/2022-11-24-mwas-repurposed-covid19-meds/index.html",
+      "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html"
+    ]
+  },
+  {
+    "listing": "/about/index.html",
+    "items": [
+      "/talk/2023-10-11-epis4equity/index.html",
+      "/talk/2023-03-09-penn-community-scholars/index.html",
+      "/publication/2022-11-24-mwas-repurposed-covid19-meds/index.html",
+      "/publication/2022-07-21-ten-simple-rules-inclusive-conference/index.html",
+      "/project/2021-07-07-presentable-user2021/index.html",
+      "/project/2021-05-04-tidy-tuesday-alt-text/index.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/2024/2024-02-16-历史、战争与观点/index.html",
+      "/blog/2024/2024-02-14-左翼右翼与经济政策/index.html",
+      "/blog/2024/2024-02-08-宏观经济学备课/index.html",
       "/blog/2024/2024-02-06-准备社科申请/index.html",
       "/blog/2024/2024-02-07-评价新古典经济/index.html",
-      "/blog/2024/2024-02-08-宏观经济学备课/index.html",
-      "/blog/2024/2024-02-14-左翼右翼与经济政策/index.html",
       "/blog/2024/2024-02-05-模仿写作/index.html",
       "/blog/2024/2024-02-04-失业率与数据要求/index.html",
       "/blog/2023/2023-12-29-hello-quarto/index.html",
